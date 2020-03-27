@@ -15,6 +15,7 @@ class Person:
         self.etapa_separacion = 0
         self.desea_pareja = False
         self.Desea_Pareja()
+        self.calcula_total_hijos()
 
 
     def Death(self):
@@ -91,7 +92,7 @@ class Person:
                 self.etapa_separacion -= 1
     
     def calcula_total_hijos(self):
-        prob = [0, 0.6, 0.75,0.35,0.2,0.1,0.05]
+        prob = [0.6, 0.75,0.35,0.2,0.1,0.05]
         solve = True
         while solve:
             if self.total_hijos >= 5:
